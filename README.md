@@ -72,7 +72,7 @@ These credentials are part of the fake-backend API used for development purposes
 - **Material UI**: For providing modern and responsive UI components.
 
 ## Deployment
-The app is deployed on Vercel. You can view the live version [here](https://eldar-challenge-rl9vgpmqo-mogliatijuans-projects.vercel.app).
+The app is deployed on Vercel. You can view the live version [here](https://eldar-challenge-eta.vercel.app).
 
 
 ## Folder Structure
