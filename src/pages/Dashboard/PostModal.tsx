@@ -24,6 +24,7 @@ const PostModal: React.FC<PostModalProps> = ({
     <Modal open={isModalOpen} onClose={handleCloseModal}>
       <Box
         sx={{
+          width: { xs: '80%', sm: '70%', md: '40%', xl: '30%' },
           position: 'absolute',
           top: '50%',
           left: '50%',
