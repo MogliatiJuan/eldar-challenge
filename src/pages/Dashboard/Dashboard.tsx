@@ -75,7 +75,7 @@ const Dashboard: React.FC = () => {
       setPosts(
         posts
           .map((post) => (post.id === id ? { ...post, ...currentPost } : post))
-          .filter((post) => post.body !== '' && post.title !== ''),
+          .filter((post) => !(post.title === '' && post.body === '')),
       );
       Swal.fire({
         title: 'Éxito',
