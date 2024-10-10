@@ -7,10 +7,9 @@ import { Box, Button, Typography, Container } from '@mui/material';
 import { validationMessages } from '@constants/index';
 import eldarLogo from '@assets/logo-eldar.png';
 import { FormLogin, PrivateRoutes } from '@models/index';
-import { validateUser } from '@utilities/index';
+import { validateUser, getValidationError } from '@utilities/index';
 import { useAuthStore, useLoaderStore } from '@store/index';
 import { InputField } from '@components/index';
-import { getValidationError } from '@utilities/getValidationError';
 
 const Login: React.FC = () => {
   const {
