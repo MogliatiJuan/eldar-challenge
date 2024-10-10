@@ -67,9 +67,9 @@ const App: React.FC = () => {
       }>
       <BrowserRouter>
         <NotFound>
-          <Route path='/' element={<Layout />}>
+          <Route path={PublicRoutes.HOME} element={<Layout />}>
             <Route
-              path='/'
+              path={PublicRoutes.HOME}
               element={<Navigate to={PublicRoutes.LOGIN} replace />}
             />
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { Box, Button, Typography } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
+import { PublicRoutes } from '@models/index';
 
 interface NotFoundProps {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ const NotFound: React.FC<NotFoundProps> = ({ children }: NotFoundProps) => {
   const navigate = useNavigate();
 
   const handleGoHome = () => {
-    navigate('/');
+    navigate(PublicRoutes.HOME);
   };
 
   return (

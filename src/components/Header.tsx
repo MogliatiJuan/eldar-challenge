@@ -1,7 +1,9 @@
 import React from 'react';
 import { Box, Button, Link } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useAuthStore } from '@store/authStore';
+import { useAuthStore } from '@store/index';
+import { PublicRoutes } from '@models/index';
+
 const Header: React.FC = () => {
   const { token, logout, user } = useAuthStore();
 
@@ -17,7 +19,7 @@ const Header: React.FC = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
       }}>
-      <Link href='/' underline='none'>
+      <Link href={PublicRoutes.HOME} underline='none'>
         {user ? `ELDAR - ${user.username.toUpperCase()}` : 'ELDAR'}
       </Link>
       {token && (
